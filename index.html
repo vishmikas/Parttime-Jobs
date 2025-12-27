@@ -11,9 +11,29 @@
         <div class="logo">DailyJobs</div>
         <nav>
             <a href="jobs.html">Jobs</a>
-            <a href="register.html" class="btn outline">Login / Register</a>
+            <a href="#" class="btn outline" id="loginBtn">Login / Register</a>
         </nav>
     </header>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+
+            <h2>Login</h2>
+
+            <form id="loginForm">
+                <input type="text" placeholder="Email or Username" required>
+                <input type="password" placeholder="Password" required>
+
+                <button type="submit" class="btn primary full">Login</button>
+            </form>
+
+            <p class="switch-text">
+                Don’t have an account?
+                <a href="register.html">Create Account</a>
+            </p>
+        </div>
+    </div>
 
     <section class="hero">
         <h1>Find Daily & Part-Time Jobs Easily</h1>
@@ -42,5 +62,8 @@
     <footer class="footer">
         <p>© 2025 DailyJobs. All rights reserved.</p>
     </footer>
+
+    <script src="main.js"></script>
+    
 </body>
 </html>
