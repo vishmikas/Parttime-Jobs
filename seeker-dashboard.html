@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Seeker Dashboard | DailyJobs</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="dashboard.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seeker Dashboard | DailyJobs</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
 
-<header class="navbar">
-    <div class="logo">DailyJobs</div>
-    <nav>
-        <span id="seekerName"></span>
-        <a href="#" id="logoutBtn" class="btn outline">Logout</a>
-    </nav>
-</header>
+        <header class="navbar">
+            <div class="logo">DailyJobs</div>
+            <nav>
+                <span id="seekerName"></span>
+                <a href="#" id="logoutBtn" class="btn outline">Logout</a>
+            </nav>
+        </header>
 
-<section class="dashboard-container">
+        <section class="dashboard-container">
 
-    <div class="stats">
-        <div class="stat-card">
-            <h3 id="availableJobs">0</h3>
-            <p>Available Jobs</p>
-        </div>
-        <div class="stat-card">
-            <h3 id="appliedJobsCount">0</h3>
-            <p>Applied Jobs</p>
-        </div>
-    </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3 id="availableJobs">0</h3>
+                    <p>Available Jobs</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="appliedJobsCount">0</h3>
+                    <p>Applied Jobs</p>
+                </div>
+            </div>
 
-    <div class="action-bar">
-        <h2>Available Jobs</h2>
-    </div>
+            <div class="action-bar">
+                <h2>My Applications</h2>
+            </div>
 
-    <div class="job-list" id="jobList">
-    </div>
+            <div class="job-list" id="appliedList">
+            </div>
+            <br>
 
-    <div class="action-bar">
-        <h2>My Applications</h2>
-    </div>
+            <div class="action-bar">
+                <h2>Available Jobs</h2>
+            </div>
 
-    <div class="job-list" id="appliedList">
-    </div>
+            <div class="job-list" id="jobList">
+            </div>
 
-</section>
+        </section>
 
-<script src="seeker-dashboard.js"></script>
-</body>
+        <script src="seeker-dashboard.js"></script>
+    </body>
 </html>

@@ -100,3 +100,20 @@
   resize: vertical;
   min-height: 100px;
 }
+
+.company-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.company-card h2 {
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.company-card p {
+  margin: 0.4rem 0;
+  color: #475569;
+}

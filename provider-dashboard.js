@@ -29,8 +29,11 @@ providerJobs.forEach(job => {
 
   div.innerHTML = `
     <h4>${job.title}</h4>
+    <p class="job-meta">
+        <strong>${job.company}</strong> • ${job.location}
+    </p>
     <p class="job-meta">${job.location} • ${job.date} • Rs. ${job.payment}</p>
-    <p>Status: <strong>${job.status}</strong></p>
+    <p>Status: <strong>${job.status}</strong></p><br>
 
     <div class="job-actions">
         <button class="edit" onclick="viewApplicants(${job.id})">

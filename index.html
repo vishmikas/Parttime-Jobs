@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parttime Jobs</title>
-    <link rel="stylesheet" href="main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DailyJobs | Find Part-Time Jobs</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">DailyJobs</div>
-        <nav>
-            <a href="jobs.html">Jobs</a>
-            <a href="#" class="btn outline" id="loginBtn">Login / Register</a>
-        </nav>
-    </header>
 
-    <div class="modal" id="loginModal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
+<header class="navbar">
+    <div class="logo">DailyJobs</div>
+    <nav>
+        <a href="#jobsSection" class="btn outline">Find Jobs</a>
+        <a href="#" class="btn primary" id="loginBtn">Login / Register</a>
+    </nav>
+</header>
 
-            <h2>Login</h2>
 
-            <form id="loginForm">
-                <input type="text" id="loginEmail" placeholder="Email or Username" required>
-                <input type="password" id="loginPassword" placeholder="Password" required>
-
-                <button type="submit" class="btn primary full">Login</button>
-            </form>
-
-            <p class="switch-text">
-                Don’t have an account?
-                <a href="register.html">Create Account</a>
-            </p>
-        </div>
-    </div>
-
-    <section class="hero">
-        <h1>Find Daily & Part-Time Jobs Easily</h1>
-        <p>Post jobs in minutes. Work today. Get paid fast.</p>
+<section class="hero">
+    <div class="hero-text">
+        <h1>Find Daily & Part-Time Jobs Effortlessly</h1>
+        <p>Post jobs quickly. Work today. Get paid fast.</p>
         <div class="hero-actions">
-            <a href="jobs.html" class="btn primary">Find Jobs</a>
+            <a href="#jobsSection" class="btn primary">Find Jobs</a>
             <a href="post-job.html" class="btn outline">Post a Job</a>
         </div>
-    </section>
+    </div>
+    <div class="hero-image">
+        <img src="images/hero-image.png" alt="Part-time Jobs">
+    </div>
+</section>
 
-    <section class="features">
+
+<section class="features">
+    <h2>Why Choose DailyJobs?</h2>
+    <div class="feature-cards">
         <div class="feature-card">
+            <img src="images/daily.png" alt="Daily Jobs">
             <h3>Daily Jobs</h3>
-            <p>Post or find jobs for today or tomorrow.</p>
+            <p>Find jobs available today or tomorrow quickly.</p>
         </div>
         <div class="feature-card">
+            <img src="images/quick.png" alt="Quick Apply">
             <h3>Quick Apply</h3>
-            <p>Apply for jobs in one click.</p>
+            <p>Apply for jobs with a single click.</p>
         </div>
         <div class="feature-card">
+            <img src="images/verified.png" alt="Verified Users">
             <h3>Verified Users</h3>
-            <p>Safe and trusted job connections.</p>
+            <p>Work with safe and trusted job providers.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer">
-        <p>© 2025 DailyJobs. All rights reserved.</p>
-    </footer>
 
-    <script src="main.js"></script>
+<section class="jobs-preview" id="jobsSection">
+    <h2>Latest Jobs</h2>
+    <div class="job-list" id="latestJobs"></div>
+</section>
 
+
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit" class="btn primary full">Login</button>
+        </form>
+        <p class="switch-text">
+            Don’t have an account? <a href="register.html">Create Account</a>
+        </p>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>© 2025 DailyJobs. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+<script src="landing.js"></script>
 </body>
 </html>

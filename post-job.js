@@ -17,6 +17,7 @@ jobForm.addEventListener("submit", (e) => {
   const job = {
     id: Date.now(),
     providerId: currentUser.id,
+    company: currentUser.company,
     title: document.getElementById("title").value.trim(),
     description: document.getElementById("description").value.trim(),
     location: document.getElementById("location").value.trim(),

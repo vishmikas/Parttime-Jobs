@@ -31,10 +31,14 @@ if (registerForm) {
 
     const newUser = {
       id: Date.now(),
-      name,
-      email,
-      role,
-      password   
+        name,
+        email,
+        password,
+        role,
+        company:
+            role === "provider"
+            ? document.getElementById("companyName").value.trim()
+            : null  
     };
 
     users.push(newUser);
